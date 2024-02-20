@@ -1,0 +1,17 @@
+<!-- galleryapp/templates/galleryapp/create_gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Gallery</title>
+</head>
+<body>
+    <h1>Create Gallery</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ gallery_form.as_table }}
+        <button type="submit">Create Gallery</button>
+    </form>
+</body>
+</html>

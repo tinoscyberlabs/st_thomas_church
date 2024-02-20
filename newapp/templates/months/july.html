@@ -1,0 +1,103 @@
+{% extends "base-two.html" %}
+{% load static %}
+{% block title %}
+ July
+{% endblock title %}
+
+{% block content %}
+		<div class="page-title-wrap typo-white">
+			<div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/img-8.jpg' %}">
+				<!-- <span class="theme-overlay"></span> -->
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-md-12">
+							<div class="page-title-inner">
+								<div id="breadcrumb" class="breadcrumb margin-bottom-10">
+									<a href="index.html" class="theme-color">Home</a>
+									<span class="current">Calendar</span>
+								</div>
+								<h1 class="page-title mb-0">St. THOMAS FORANE CHURCH</h1>
+								<h6>P.B. No. 1321, 5th Cross, Sharadambanagar, M.E.S. Road, Jalahalli P.O., Bengaluru- 560013 Ph.: 080 28383175</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+<div id="calender-month">
+<!-- partial:index.partial.html -->
+<!-- days sourced from: https://nationaldaycalendar.com/february/ -->
+<h1 id="calender-head">July 2024</h1>
+<p>Holidays and Scheduled Events</a>
+	<ul id="date-lst">
+		<ul>
+			<li style="text-align: center; color: red; font-size: 20px;">SUNDAY</li>
+			<li id="date-calender"><time datetime="2022-02-01"></time></li>
+		</ul>
+		<ul>
+			<li style="text-align: center; color: blue; font-size: 20px;">MONDAY</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-02">1</time>Eph 1:3-14, Mt 3:4-12</li>
+		</ul>
+		<ul>
+			<li style="text-align: center; color: blue; font-size: 20px;">TUESDAY</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-03">2</time>Tit 3:1-7, Jn 3:1-12</li>
+		</ul>
+		<ul>
+			<li style="text-align: center; color: blue; font-size: 20px;">WEDNESDAY</li>
+			<li id="date-calender" style="color: blue;">Dukhrana (St Thomas Day)<br><br><time datetime="2022-02-04">3</time>Eph 2: 19-22, Jn 20:24-29</li>
+		</ul>
+		<ul>
+			<li style="text-align: center; color: blue; font-size: 20px;">THURSDAY</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-05">4</time>Heb 3:7-19, Mt 16:1-12</li>
+		</ul>
+		<ul>
+			<li style="text-align: center; color: blue; font-size: 20px;">FRIDAY</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-06">5</time>2 Cor 6:1-10, Lk 10:1-12, 17-20 </li>
+		</ul>
+		<ul>
+			<li style="text-align: center; color: green; font-size: 20px;">SATURDAY</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-07">6</time>Rom 14:13-19, Jn 16:16-24</li>
+		</ul>
+			<li id="date-calender" style="color: red;"><br><br><time datetime="2022-02-08">7</time>Gen 35:23-29, Josh 4:1-9,<br>Rev 21:9-21, Mt 10:1-15</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-09">8</time>Eph 2:11-22, Mt 16:13-20</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-10">9</time>Gal 1:10-16, Jn 4:31-38</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-11">10</time>1 Tim 4:12-16, Lk 12:41-48</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-12">11</time>Rom 8:12-17, Mt 5:1-12</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-13">12</time>Gal 1:6-10, Lk 1:67, 76-80</li>
+			<li id="date-calender">Bank Holiday<br><br><time datetime="2022-02-14">13</time>Phil 1:19-26, Jn 11:1-16</li>
+			<li id="date-calender" style="color: red;"><br><br><time datetime="2022-02-15">14</time>Deut 28:1-14, Sir 10:19-25,<br>Rom 11:17-24, Jn 15:1-8</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-16">15</time>Heb 11:3-10, Mt 10:16-33</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-17">16</time>2 Cor 1:3-7, Lk 11:24-28</li>
+			<li id="date-calender" style="color: red;">Muharram<br><br><time datetime="2022-02-18">17</time>1 Thess 5:12-22, Lk 17:11-19</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-19">18</time>Gal 6:6-10, Mt 21:18-22</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-20">19</time>1 Cor 3:5-11, Jn 14:1-11</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-21">20</time>Rom 15:30-33, Mt 7:7-11</li>
+			<li id="date-calender" style="color: red;"><br><br><time datetime="2022-02-22">21</time>Ruth 1:6-18, Sir 33:7-13,<br>Rom 12:3-8, Lk 10:38-4</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-23">22</time>Rom 8:35-39, Jn 20:1-18</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-24">23</time>1 Cor 7:1-7, Mt 19:3-12</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-25">24</time>Rom 12:14-21, Jn 13:1-15</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-26">25</time>1 Cor 4:6-15, Mt 20: 20-28</li>
+			<li id="date-calender">Sts. Joachim and Anna<br><br><time datetime="2022-02-27">26</time>Heb 11:8-12, Mt 1:1-16</li>
+			<li id="date-calender">Bank Holiday<br><br><time datetime="2022-02-28">27</time>Gal 2:19-21, Jn 12:20-26</li>
+			<li id="date-calender" style="color: red;">St. Alphonsa<br><br><time datetime="2022-02-28">28</time>Deut 6:1-9, Ezek 3:16-21,<br>2 Thess 2:13-17, Mt 13:44-52</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-28">29</time>1 Jn 4:7-16, Jn 11:17-26</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-28">30</time>1 Cor 1:10-17, Jn 3:22-30</li>
+			<li id="date-calender"><br><br><time datetime="2022-02-28">31</time>1 Cor 10:31-11:1, Lk 14:25-33</li>
+</ul>
+<div class="row pad-top-60">
+	<div class="custom-post-nav">
+		<div class="prev-nav-link">											
+			<a class="btn btn-default prev" href="june"><i class="ti-angle-double-left"></i><h4 class="mb-0 ms-2">Prev</h4></a>
+		</div>
+		<div class="next-nav-link">											
+			<a class="btn btn-default next" href="auguest"><h4 class="mb-0 me-2">Next</h4><i class="ti-angle-double-right"></i></a>
+		</div>
+	</div>
+</div>
+</div>
+<!-- partial -->
+  
+{% endblock content %}

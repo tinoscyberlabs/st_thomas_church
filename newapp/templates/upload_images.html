@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ministries</title>
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="{% static 'asset/img/kxp_fav.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'asset/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <img src="{% static 'images/church logo (4).png' %}" class="img-fluid" width="60" height="40" alt="Logo">
+            <div class="logo-name">yourLogo</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <!-- <i class="fa fa-angle-right" aria-hidden="true"></i> -->
+                        <span class="name">Dashboard</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Dashboard</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="admin_add_events" class="link">
+                        <i class='bx bx-collection'></i>
+                        <span class="name">Events</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Events</a>
+                    <a href="admin_add_events" class="link">Add Events</a>
+                    <a href="admin_event_view" class="link">Event Details</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="admin_ministries_view" class="link">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <span class="name">Ministries</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="admin_ministries_view" class="link submenu-title">Ministries</a>
+                    <a href="admin_add_ministries" class="link">Add Ministries</a>
+                    <a href="admin_daily_mass_view" class="link">Mass Times</a>
+                    <a href="admin_special_mass_view" class="link">Special Mass</a>
+                    <a href="admin_obituary_view" class="link">Obituary</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="upload_images" class="link">
+                       <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <span class="name">Gallery</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="upload_images" class="link submenu-title">Gallery</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="admin_blog_view" class="link">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <span class="name">News&Blogs</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="admin_add_blog" class="link submenu-title">News&Blogs</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+
+            <li>
+                <div class="title">
+                    <a href="admin_contact_view" class="link">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span class="name">Contact History</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="admin_contact_view" class="link submenu-title">Contact History</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            {% if user.is_authenticated %}
+            <li>
+                <div class="title">
+                    <a href="" class="link">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span class="name">Sign Out</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="" class="link submenu-title">Sign Out </a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+            {% else %}
+            <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span class="name">Sign In</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Sign In</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+            <div class="text">Toggle</div>
+        </div>
+            <!-- ======================= Cards ================== -->
+            <div class="container-1">
+                <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+
+                    <h2>Upload Gallery Images</h2>
+                    <div class="content-1">
+                        <div class="input-box">
+                            <label for="main_heading">Main Heading</label>
+                            <input type="text" placeholder="" name="main_heading" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="main_image">Main Image</label>
+                            <input type="file" placeholder="" name="main_image" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="image">Gallery Images</label>
+                            <input type="file" placeholder="" name="image" multiple>
+                        </div>
+
+                        <div class="button-container-1">
+                            <button type="submit">ADD GALLERY</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </section>
+
+        <!-- =========== Scripts =========  -->
+        <script src="{% static 'asset/js/main.js' %}"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,847 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!--Title-->
+    <title>St.Thomas</title>
+    <!-- CSS -->
+    <!-- Font CSS -->
+     
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.min.css' %}">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <!-- Owl Slider -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/color-schemes/red.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" class="main-style">
+</head>
+<!--Body Start-->
+<body data-res-from="1025">
+    <!--Page Loader-->
+    <div class="page-loader"></div>
+    <!--Zmm Wrapper-->
+    <div class="zmm-wrapper">
+        <a href="#" class="zmm-close close"></a>
+        <div class="zmm-inner bg-white typo-dark">
+            <div class="text-center mobile-logo-part margin-bottom-30">
+                 <a href="index.html" class="img-before"><img src="{% static 'images/logo-dark.png' %}" class="img-fluid" width="60" height="40" alt="Logo"></a>
+            </div>
+            <div class="zmm-main-nav">
+            </div>            
+			<div class="search-form-wrapper margin-top-30">
+			    <form class="search-form" role="search">
+			        <div class="input-group add-on">
+			            <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+			            <div class="input-group-btn">
+			                <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button>
+			            </div>
+			        </div>
+			    </form>
+			</div>
+        </div>
+    </div>
+    <!-- Overlay Search -->
+    <div class="overlay-search text-center hide">
+		<a href="#" class="close close-light overlay-search-close"></a>
+		<div class="search-form-wrapper">
+			<form class="navbar-form search-form sliding-search-form" role="search">
+				<div class="input-group add-on">
+					<input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+					<div class="input-group-btn">
+						<button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+    <!-- Main wrapper-->
+    <div class="page-wrapper">
+        <div class="page-wrapper-inner">
+            <header>
+                <!--Mobile Header-->
+                <div class="mobile-header bg-white typo-dark">
+                    <div class="mobile-header-inner">
+                        <div class="sticky-outer">
+                            <div class="sticky-head">
+                                <div class="basic-container clearfix">
+                                    <ul class="nav mobile-header-items pull-left">
+                                        <li class="nav-item"><a href="#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
+                                    </ul>
+                                    <ul class="nav mobile-header-items pull-center">
+                                        <li>
+                                            <a href="index.html" class="img-before"><img src="{% static 'images/logo-dark.png' %}" class="img-fluid" width="60" height="40" alt="Logo"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav mobile-header-items pull-right">
+                                        <li class="nav-item"><a href="#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- .basic-container -->
+                            </div>
+                            <!-- .sticky-head -->
+                        </div>
+                        <!-- .sticky-outer -->
+                    </div>
+                    <!-- .mobile-header-inner -->
+                </div>
+                <!-- .mobile-header -->
+                <!--Header-->
+                <div class="header-inner header-1">
+                    <!--Sticky part-->
+                    <div class="sticky-outer">
+                        <div class="sticky-head">
+                            <!--Navbar-->
+                            <nav class="navbar nav-shadow">
+                                <div class="basic-container clearfix">
+                                    <div class="navbar-inner">
+										<!--Overlay Menu Switch-->
+                                        <ul class="nav navbar-items pull-left">
+                                            <li class="list-item">
+                                                <a href="index.html" class="logo-general"><img src="{% static 'images/logo-dark.png' %}" class="img-fluid" width="80" height="50" alt="Logo" /></a>
+												<a href="index.html" class="logo-sticky"><img src="{% static 'images/logo-dark.png' %}" class="img-fluid" width="80" height="40" alt="Logo" /></a>
+                                            </li>
+                                        </ul>
+										<!-- Menu -->
+									<ul class="nav navbar-items pull-right">
+										<!--List Item-->
+										<li class="list-item">
+											<ul class="nav navbar-main menu-dark">
+												<li class="dropdown cus-img-menu active dropdown-sub"><a href="index.html" style="
+													padding-right: 5px;
+												">Home</a>
+												</li>
+												
+												<li class="dropdown dropdown-sub"><a href="#" style="
+													padding-right: 5px;
+												">Parish</a>
+													<ul class="dropdown-menu">
+														<li class="dropdown"><a href="about-us.html">History</a>
+														</li>
+														<li class="dropdown"><a href="error-404.html">Administration</a>
+														</li>
+														
+														<li class="dropdown"><a href="error-404.html">Former Vicars</a>
+														</li>
+														<li class="dropdown"><a href="error-404.html">Former Asst. Vicars</a>
+														</li>
+														<li class="dropdown"><a href="error-404.html">Former Trustees</a>
+														</li>
+														<li class="dropdown"><a href="error-404.html">Institution Inside The Campus</a>
+														</li>
+														<li class="dropdown"><a href="error-404.html">Wards</a>
+														</li>
+																													
+													</ul>
+												</li>
+												<li class="dropdown dropdown-sub"><a href="#" style="
+													padding-right: 5px;
+												">Forane</a>
+												<ul class="dropdown-menu">
+													<li class="dropdown"><a href="error-404.html">Parishes & Vicars </a>
+													</li>
+													<li class="dropdown"><a href="error-404.html">Eucharistic Centers</a>
+													</li>
+													
+																												
+												</ul>
+												</li>
+												<li class="dropdown dropdown-sub"><a href="#" style="
+													padding-right: 5px;
+												">Associations</a>
+													<ul class="dropdown-menu">
+														<li class="dropdown">
+															<a href="#">St.Vincent De Paul Society
+															</a>
+														</li>
+														<li class="dropdown">
+															<a href="#">Stars Pithruvedi</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Mathrujyothi</a>	
+														</li>
+														<li class="dropdown">
+															<a href="STYF.html">STYF</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Altar Servants</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Bible Readers Forum</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Choir</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">CML</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Holy Childhood </a>	
+														</li>
+														
+
+														
+													</ul>
+												</li>
+												<li class="dropdown"><a href="#" style="
+													padding-right: 5px;
+												">Catechism</a></li>
+
+												<li class="dropdown dropdown-sub"><a href="#" style="
+													padding-right: 5px;
+												">Activities</a>
+													<ul class="dropdown-menu">
+														<li class="dropdown">
+															<a href="#">Santhome Jobs</a>
+														</li>
+														<li class="dropdown">
+															<a href="#">Year of Hunger</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Good Samaritan Group (GSG)</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Dialisis AID</a>	
+														</li>
+														<li class="dropdown">
+															<a href="#">Santhome Tidings</a>	
+														</li>
+													</ul>
+												</li>
+												
+												<li class="dropdown"><a href="gallery main.html" style="
+													padding-right: 5px;
+												">Gallery</a></li>
+												
+																								
+												   <li class="dropdown"><a href="contact-us.html" style="
+													padding-right: 5px;
+												">Contact Us</a></li>
+												  
+											</ul>
+										</li>
+										<li class="list-item">
+											<div class="header-navbar-text-1"><a href="login.html" class="h-donate-btn">Login</a></div>
+										</li>
+										<!--List Item End-->
+									</ul>
+											
+									<!-- Menu -->
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--sticky-head-->
+                    </div>
+                    <!--sticky-outer-->
+                </div>
+            </header>
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/page-title.jpg' %}">
+					<span class="theme-overlay"></span>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <div class="page-title-inner">
+									<div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                        <a href="index.html" class="theme-color">Home</a>
+                                        <span class="current">STYF</span>
+                                    </div>
+                                    <h1 class="page-title mb-0">San Thome Youth Front</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">
+                    <!-- Portfolio Single Section -->
+                    <section id="single-portfolio" class="single-portfolio">
+                        <div class="container">
+                            <div class="single-portfolio-wrap">
+                                <!-- Row -->
+                                <div class="row">
+                                    <!-- Col -->
+                                    <div class="col-md-12">
+                                        <!-- portfolio img -->
+                                        <div class="zoom-gallery mb-5">
+                                            <div class="portfolio-thumb relative">
+                                                <a class="popup-img" href="{% static 'images/portfolio/San Thome Youth Front.jpg' %}" title="Single Portfolio">
+                                                    <img src="{% static 'images/portfolio/San Thome Youth Front.jpg' %}" class="img-fluid single-portfolio-img" width="1170" height="694" alt="portfolios-img" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Col -->
+                                </div>
+                                <!-- Row -->
+                                <!-- Row 2 -->
+                                <div class="row pt-3">
+                                    <!-- Col -->
+                                    <div class="col-lg-8">
+                                        <!-- portfolio-info-wrap -->
+                                        <div class="portfolio-info-wrap">
+                                            <div class="portfolio-content pad-bottom-30">                                                
+                                                <p>San Thome Youth Front (STYF) from St Thomas Forane Church, Jallahalli has proudly served as a thriving church youth group for the past three decades. Committed to nurturing spiritual growth and fostering social development, STYF has been an integral part of the church community. Rooted in faith, fellowship, and service, STYF offers a diverse range of activities, including regular meetings, vibrant fests, and engaging community outreach programs. These fests serve as meaningful platforms for spiritual reflection, cultural exchange, and fostering lasting connections. With a mission to inspire and empower the youth, STYF continues to guide young individuals on their faith journey and encourage active participation within the church and the broader society. </p>
+                                            </div>
+                                        </div>
+                                        <!-- portfolio-info-wrap -->                                     
+                                    </div>
+                                     <!-- Col -->
+                                    <!-- Sidebar -->
+                                     <!-- Col -->
+                                    <div class="col-lg-4">
+                                        <!-- Portfolio Meta Wrap -->
+                                        <div class="portfolio-meta-wrap portfolio-right mt-res-5">
+                                            <!-- Portfolio Meta -->
+                                            <!-- about wrap -->
+                                                        <div class="about-wrap relative">
+                                                            <div class="about-wrap-inner">
+                                                                <!-- about details -->
+                                                                <div class="about-wrap-details">
+                                                                    <!-- about button -->
+                                                                    <div class="text-center">
+                                                                        <div class="about-img">
+                                                                            <img src="{% static 'images/portfolio/styflogo.png' %}" class="" alt="about-img">
+                                                                            
+                                                                        </div>
+                                                                        <!-- .col -->
+                                                                    </div>
+                                                                </div>
+                                                                <!-- about details End-->
+                                                            </div>
+                                                        </div>
+                                                        <!-- about wrap end -->
+                                            <!-- Portfolio Meta-->
+                                        </div>
+                                        <!-- Portfolio Meta Wrap-->
+                                    </div>
+                                     <!-- Sidebar -->
+                                </div>
+                                <!-- Row 2 -->
+                                <!-- Team Section -->
+					<section id="team-section" class="team-section pad-top-95 pad-bottom-90">
+						<div class="container">
+							<!-- Row -->
+							<div class="row">
+								<div class="offset-md-2 col-md-8">
+									<div class="title-wrap text-center">
+										<div class="section-title">
+											<span class="sub-title theme-color text-uppercase">Our Team</span>
+											<h2 class="section-title margin-top-5">STYF Council Members</h2>
+											<span class="border-bottom center"></span>											
+										</div>
+									</div>
+								</div>
+								<!--Team Main Slider-->
+								<div class="owl-carousel team-main-wrapper" data-loop="1" data-nav="0" data-dots="1" data-autoplay="1" data-autoplaypause="1" data-autoplaytime="5000" data-smartspeed="1000" data-margin="30" data-items="3" data-items-tab="2" data-items-mob="1">
+									<!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/1.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Rev. Fr. Joseph Thoompanal CMF</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0"> STYF Director</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/2.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Mr. George Vareed T</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">STYF Animator</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/3.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Jeffrin Thankachan</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">President</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/4.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Neetha Reji </a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Vice President</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/5.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Maria Sunny P</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">General Secretary</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/6.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Ciya Maria James </a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Secretary</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/7.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Gesmond George</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Treasurer</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/8.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Joel S Thomas</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Cultural  Secretary</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/9.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Amal Joy</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Sports  Secretary</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/10.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Eby Francis </a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Councillor</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/11.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Tia Elizabeth Manoj</a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Councillor</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+                                    <!--Item-->
+									<div class="item">
+										<div class="team-style-1">
+											<!--Team Inner-->										
+											<div class="team-inner margin-bottom-20">												
+												<div class="team-thumb mb-0 relative">
+													<!--Team Overlay-->
+													<div class="team-overlay"></div>
+													<img src="{% static 'images/portfolio/STYF team/12.jpg' %}" class="img-fluid thumb w-100" width="480" height="485" alt="team-img" />
+													<div class="team-overlay-details top-left-overlay typo-white text-center">
+														<div class="social-icons">
+															<a href="#"><span class="ti-facebook"></span></a>
+															<a href="#"><span class="ti-twitter"></span></a>					
+															<a href="#"><span class="ti-instagram"></span></a>	
+															<a href="#"><span class="ti-linkedin"></span></a>									
+														</div>
+													</div>
+												</div>												
+												<div class="team-details text-center pad-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name typo-white">Aaron Joseph </a></h3>
+													</div>
+													<div class="team-designation"><p class="mb-0">Councillor</p></div>
+												</div>
+											</div>
+											<!--Team Inner Ends-->
+										</div>
+									</div>
+									<!--Item Ends-->
+								</div>
+								<!--Team Owl Slider-->
+							</div>
+							<!-- Row -->
+						</div>
+						<!-- Container -->
+					</section>
+					<!-- Team Section End -->
+								
+                            </div>
+                            <!-- Portfolio Single Wrap -->
+                        </div>
+                    </section>
+                    <!-- Portfolios Section End -->
+                </div>
+            </div>
+        </div>
+    <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="{% static 'images/bg/footer-bg.jpg' %}">
+        <!--Footer Widgets Columns Posibilities 4-->
+        <div class="footer-widgets">
+            <div class="footer-middle-wrap footer-overlay-dark">
+				<div class="color-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                         <div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">About St. Thomas Church</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="widget-text margin-bottom-30">
+								<p>Welcome to St. Thomas Church, Jalahalli, a 2000 plus members strong community, united in the spirit of the Lord. Our Church is based in North Bangalore, and our community was formed to address the spiritual needs of the Malayalee Catholics here.</p>
+							</div>
+							<div class="social-icons">
+								<a href="#" class="social-fb"><span class="ti-facebook"></span></a>
+								<a href="#" class="social-twitter"><span class="ti-twitter"></span></a>
+								<!--<a href="#" class="social-instagram"><span class="ti-instagram"></span></a>-->
+								<!--<a href="#" class="social-pinterest"><span class="ti-pinterest"></span></a>-->
+								<a href="#" class="social-youtube"><span class="ti-youtube"></span></a>
+							</div>                            
+                        </div>
+						<!-- Col -->
+						<div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Quick Links</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="menu-quick-links">
+								<ul class="menu">
+									<li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.holyfamilyparishbangalore.com/">Holy Family Parish</a></li>
+									<li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.vatican.va/holy_father/benedict_xvi/messages/lent/documents/hf_ben-xvi_mes_20091030_lent-2010_en.html">MESSAGE OF HIS HOLINESS BENEDICT XVI FOR LENT 2010 </a></li>
+									<li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.indianrailways.gov.in/">Indian Railways</a></li>
+								</ul>
+							</div>                           
+                        </div>
+                        <!-- Col -->
+                        <div class="col-lg-3 widget recent-posts">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Locate Us</h3>
+                            </div>
+                            <nav>
+                                
+								<section class="elementor-element elementor-element-48429e8 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="48429e8" data-element_type="section" style="padding-top: 0px;">
+									<div class="elementor-container elementor-column-gap-no">
+										<div class="elementor-row">
+											<div class="elementor-element elementor-element-52c48c7 elementor-column elementor-col-100 elementor-top-column" data-id="52c48c7" data-element_type="column">
+												<div class="elementor-column-wrap  elementor-element-populated">
+													<div class="elementor-widget-wrap">
+														<div class="elementor-element elementor-element-abbd9c6 elementor-widget elementor-widget-google_maps" data-id="abbd9c6" data-element_type="widget" data-widget_type="google_maps.default">
+															<div class="elementor-widget-container">
+																<div class="elementor-custom-embed">
+																	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+																	src="https://www.google.com/maps/place/St.+Thomas+Forane+Church/@13.0439286,77.5446999,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNUsTNNiWf2j7WuBNB-4D7F4IfUewomupV80300!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNUsTNNiWf2j7WuBNB-4D7F4IfUewomupV80300%3Dw129-h86-k-no!7i2048!8i1365!4m22!1m14!4m13!1m5!1m1!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2m2!1d77.5453926!2d13.0442586!1m6!1m2!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2sSt.+Thomas+Forane+Church,+St.claret+College+St.thomas+Church+Jalahalli,+2GVW%2BP5V,St.Thomas+Forane+Church,+5th+Cross+Rd,+Jalahalli+Village,+2nd+Stage,+Bengaluru,+Karnataka+560013!2m2!1d77.5453926!2d13.0442586!3m6!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!8m2!3d13.0443687!4d77.5454284!10e5!16s%2Fg%2F1tdb2qgc?entry=ttu&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" 
+																	aria-label="St.Thomas Church, Jalahalli Nagar, Bangalore" style="width: 244.500px; height: 208px;">
+																</iframe>
+																</div>		
+															</div>
+														</div>
+													</div>			
+												</div>		
+											</div>						
+										</div>			
+									</div>		
+								</section>
+
+                            </nav>
+                        </div>
+                        <!-- Col -->
+                        <div class="col-lg-3 widget contact-info-widget">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Contact Info</h3>
+                            </div>
+                            <div class="widget-text margin-bottom-30">
+								<p>Address:<br>
+									MES Ring Road, 5th Cross, <br>
+									Sharadamba Nagar, Jalahalli Post,<br>
+									Bangalore - 560013<br>
+									Phone: 0091-80-28383175<br>
+                                    Email: example@gmail.com<br>
+                                    Web: www.example.org</p>
+							</div> 
+                        </div>
+						<!-- Col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Footer -->
+    <!-- jQuery Lib -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- Popper Js Support for Bootstrap -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap Js -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Easing Js -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!-- Carousel Js Code -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- Paroller Js -->
+    <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+    <!-- Isotope Js -->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!-- Magnific Popup Js -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<!-- Validator Js -->
+    <script src="{% static 'js/validator.min.js' %}"></script>
+    <!-- Smart Resize Js -->
+    <script src="{% static 'js/smartresize.min.js' %}"></script>
+    <!-- Appear Js -->
+    <script src="{% static 'js/jquery.appear.min.js' %}"></script>
+    <!-- Theme Custom Js -->
+    <script src="{% static 'js/custom.js' %}"></script>
+	<!-- Google Map Js -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtkY02zM_XV3XtSzJbNwJdiA2iuNmP_bI"></script>
+</body>
+<!-- Body End -->
+</html>

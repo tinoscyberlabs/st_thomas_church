@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Dropdown Menu | Korsat X Parmaga</title>
+
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="{% static 'asset/img/kxp_fav.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'asset/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+           <img src="{% static 'images/church logo (4).png' %}" class="img-fluid" width="60" height="40" alt="Logo">
+            <div class="logo-name">St.Thomas Church</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="admin_dashboard" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="name">Dashboard</span>
+                    </a>
+                    
+                </div>
+                <div class="submenu">
+                    <a href="admin_dashboard" class="link submenu-title">Dashboard</a>
+                </div>
+            </li>
+
+          
+            
+
+            <li class="dropdown">
+                <div class="title">
+                    <a href="" class="link">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <span class="name">Details</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="stars_pithruvedi_association" class="link submenu-title"></a>
+                    <a href="stars_pithruvedi_association" class="link">Add Details</a>
+                    <a href="stars_pithruvedi_view" class="link">View Details</a>
+                    
+                    
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            {% if user.is_authenticated %}
+            <li>
+                <div class="title">
+                    <a href="logout_user" class="link">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span class="name">Sign Out</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="logout_user" class="link submenu-title">Sign Out </a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+            {% else %}
+            <li>
+                <div class="title">
+                    <a href="login_user" class="link">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <span class="name">Sign In</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="login_user" class="link submenu-title">Sign In</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+            <div class="text">Toggle</div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Link JS -->
+    <script src="{% static 'asset/js/main.js' %}"></script>
+</body>
+
+</html>

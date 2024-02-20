@@ -1,0 +1,267 @@
+
+{% extends "base-two.html" %}
+{% load static %}
+{% block title %}
+ Bishop Message
+{% endblock title %}
+
+{% block content %}
+
+            <div class="page-title-wrap typo-white">
+				<div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/base-two-main.JPG' %}">
+                    <span class="theme-overlay"></span>
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-12">
+                                    <div class="page-title-inner">
+                                        <div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                            <a href="index.html" class="theme-color">Home</a>
+												<span class="current">Daily Masses</span>
+
+											<h1 class="page-title mb-0">Daily Masses</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">
+                    <!-- Events Section -->
+                    <section id="events-section" class="events-section pad-top-120 pad-bottom-70">
+                        <!-- Screan Reader Text -->
+                        <h2 class="screen-reader-text">Events 3</h2>
+                        <div class="container">
+                            <div class="section-title">
+                                <!--<span class="sub-title theme-color text-uppercase">About Us</span>-->
+                                <h2 class="section-title margin-top-5">Daily Masses</h2>
+                                <span class="border-bottom"></span>
+                            </div>
+                            <!-- Row -->
+                            <div class="row">
+
+                                <!-- Col -->
+                                <div class="col-md-12">
+
+                                    <!--events Main wrap-->
+                                    <div class="events-main-wrapper events-grid events-style-4">
+                                        <div class="row">
+
+                                             {% for daily_masses in daily_mass %}
+                                            <!-- Col-md -->
+                                            <div class="col-lg-4 col-md-6">
+
+                                                <!--events Inner-->
+                                                <div class="events-inner margin-bottom-30">
+                                                    <!--events Thumb-->
+													
+                                                    <!--events details-->
+                                                    <div class="events-details pad-30">
+														<div class="event-date margin-bottom-15">{{daily_masses.mass_date}}<span class="event-time">{{daily_masses.mass_time}} - {{daily_masses.end_time}}</span>
+														</div>
+                                                        <div class="event-title mb-3">
+															<h5>{{daily_masses.mass_days}}</h5>
+														</div>
+														<div class="event-excerpt mb-3">
+															<p>{{daily_masses.mass_description}}</p>
+														</div>
+														                                                        
+                                                    </div>
+                                                    <!--events details-->
+                                                </div>
+                                                <!--events Inner Ends-->
+                                            </div>{% endfor %}
+
+                                            <!--Col-md Ends-->
+                                        </div>
+                                        <!-- events Row -->
+                                    </div>
+                                    <!-- events Main wrap Ends -->
+                                </div>
+                                <!-- Col -->
+                            </div>
+                            <!-- Row -->
+                            <div class="section-title">
+                                <!--<span class="sub-title theme-color text-uppercase">About Us</span>-->
+                                <h2 class="section-title margin-top-5">Special Masses</h2>
+                                <span class="border-bottom"></span>
+                            </div>
+                            <!-- Row -->
+                            <div class="row">
+                                <!-- Col -->
+                                <div class="col-md-12">
+                                    <!--events Main wrap-->
+                                    <div class="events-main-wrapper events-grid events-style-4">
+                                        <div class="row">
+                                            {% for special_mass in special_mass %}
+                                            <!-- Col-md -->
+                                            <div class="col-lg-4 col-md-6">
+                                                <!--events Inner-->
+                                                <div class="events-inner margin-bottom-30">
+                                                    <!--events Thumb-->
+													
+                                                    <!--events details-->
+                                                    <div class="events-details pad-30">
+														<div class="event-date margin-bottom-15">{{special_mass.date}}<span class="event-time">{{special_mass.start_time}}</span>
+														</div>
+                                                        <div class="event-title mb-3">
+															<h5>{{special_mass.event_name}}</h5>
+														</div>
+														<div class="event-excerpt mb-3">
+															<p>{{special_mass.description}}</p>
+														</div>
+														                                                        
+                                                    </div>
+                                                    <!--events details-->
+                                                </div>
+                                                <!--events Inner Ends-->
+
+                                            </div>{% endfor %}
+
+                                            </div>
+                                            <!--Col-md Ends-->
+
+                                        </div>
+                                        <!-- events Row -->
+                                    </div>
+                                    <!-- events Main wrap Ends -->
+                                </div>
+                                <!-- Col -->
+                            </div>
+
+                            <!-- Row -->
+                        </div>
+                    </section>
+                    <!-- events Section Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->    
+{% endblock content %}
+<!--    &lt;!&ndash; Footer &ndash;&gt;-->
+<!--    <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="images/bg/footer-bg.jpg">-->
+<!--        &lt;!&ndash;Footer Widgets Columns Posibilities 4&ndash;&gt;-->
+<!--        <div class="footer-widgets">-->
+<!--            <div class="footer-middle-wrap footer-overlay-dark">-->
+<!--				<div class="color-overlay"></div>-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+<!--                         <div class="col-lg-3 widget text-widget">-->
+<!--							<div class="widget-title">-->
+<!--                                &lt;!&ndash; Title &ndash;&gt;-->
+<!--                                <h3 class="title typo-white">About St. Thomas Church</h3>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Text &ndash;&gt;-->
+<!--                            <div class="widget-text margin-bottom-30">-->
+<!--								<p>Welcome to St. Thomas Church, Jalahalli, a 2000 plus members strong community, united in the spirit of the Lord. Our Church is based in North Bangalore, and our community was formed to address the spiritual needs of the Malayalee Catholics here.</p>-->
+<!--							</div>-->
+<!--							<div class="social-icons">-->
+<!--								<a href="#" class="social-fb"><span class="ti-facebook"></span></a>-->
+<!--								<a href="#" class="social-twitter"><span class="ti-twitter"></span></a>-->
+<!--								&lt;!&ndash;<a href="#" class="social-instagram"><span class="ti-instagram"></span></a>&ndash;&gt;-->
+<!--								&lt;!&ndash;<a href="#" class="social-pinterest"><span class="ti-pinterest"></span></a>&ndash;&gt;-->
+<!--								<a href="#" class="social-youtube"><span class="ti-youtube"></span></a>-->
+<!--							</div>                            -->
+<!--                        </div>-->
+<!--						&lt;!&ndash; Col &ndash;&gt;-->
+<!--						<div class="col-lg-3 widget text-widget">-->
+<!--							<div class="widget-title">-->
+<!--                                &lt;!&ndash; Title &ndash;&gt;-->
+<!--                                <h3 class="title typo-white">Quick Links</h3>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Text &ndash;&gt;-->
+<!--                            <div class="menu-quick-links">-->
+<!--								<ul class="menu">-->
+<!--									<li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.holyfamilyparishbangalore.com/">Holy Family Parish</a></li>-->
+<!--									<li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.vatican.va/holy_father/benedict_xvi/messages/lent/documents/hf_ben-xvi_mes_20091030_lent-2010_en.html">MESSAGE OF HIS HOLINESS BENEDICT XVI FOR LENT 2010 </a></li>-->
+<!--									<li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.indianrailways.gov.in/">Indian Railways</a></li>-->
+<!--								</ul>-->
+<!--							</div>                           -->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Col &ndash;&gt;-->
+<!--                        <div class="col-lg-3 widget recent-posts">-->
+<!--                            <div class="widget-title">-->
+<!--                                &lt;!&ndash; Title &ndash;&gt;-->
+<!--                                <h3 class="title typo-white">Locate Us</h3>-->
+<!--                            </div>-->
+<!--                            <nav>-->
+<!--                                -->
+<!--								<section class="elementor-element elementor-element-48429e8 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="48429e8" data-element_type="section" style="padding-top: 0px;">-->
+<!--									<div class="elementor-container elementor-column-gap-no">-->
+<!--										<div class="elementor-row">-->
+<!--											<div class="elementor-element elementor-element-52c48c7 elementor-column elementor-col-100 elementor-top-column" data-id="52c48c7" data-element_type="column">-->
+<!--												<div class="elementor-column-wrap  elementor-element-populated">-->
+<!--													<div class="elementor-widget-wrap">-->
+<!--														<div class="elementor-element elementor-element-abbd9c6 elementor-widget elementor-widget-google_maps" data-id="abbd9c6" data-element_type="widget" data-widget_type="google_maps.default">-->
+<!--															<div class="elementor-widget-container">-->
+<!--																<div class="elementor-custom-embed">-->
+<!--																	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" -->
+<!--																	src="https://www.google.com/maps/place/St.+Thomas+Forane+Church/@13.0439286,77.5446999,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNUsTNNiWf2j7WuBNB-4D7F4IfUewomupV80300!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNUsTNNiWf2j7WuBNB-4D7F4IfUewomupV80300%3Dw129-h86-k-no!7i2048!8i1365!4m22!1m14!4m13!1m5!1m1!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2m2!1d77.5453926!2d13.0442586!1m6!1m2!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2sSt.+Thomas+Forane+Church,+St.claret+College+St.thomas+Church+Jalahalli,+2GVW%2BP5V,St.Thomas+Forane+Church,+5th+Cross+Rd,+Jalahalli+Village,+2nd+Stage,+Bengaluru,+Karnataka+560013!2m2!1d77.5453926!2d13.0442586!3m6!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!8m2!3d13.0443687!4d77.5454284!10e5!16s%2Fg%2F1tdb2qgc?entry=ttu&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" -->
+<!--																	aria-label="St.Thomas Church, Jalahalli Nagar, Bangalore" style="width: 244.500px; height: 208px;">-->
+<!--																</iframe>-->
+<!--																</div>		-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</div>			-->
+<!--												</div>		-->
+<!--											</div>						-->
+<!--										</div>			-->
+<!--									</div>		-->
+<!--								</section>-->
+
+<!--                            </nav>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Col &ndash;&gt;-->
+<!--                        <div class="col-lg-3 widget contact-info-widget">-->
+<!--                            <div class="widget-title">-->
+<!--                                &lt;!&ndash; Title &ndash;&gt;-->
+<!--                                <h3 class="title typo-white">Contact Info</h3>-->
+<!--                            </div>-->
+<!--                            <div class="widget-text margin-bottom-30">-->
+<!--								<p>Address:<br>-->
+<!--									MES Ring Road, 5th Cross, <br>-->
+<!--									Sharadamba Nagar, Jalahalli Post,<br>-->
+<!--									Bangalore - 560013<br>-->
+<!--									Phone: 0091-80-28383175<br>-->
+<!--                                    Email: example@gmail.com<br>-->
+<!--                                    Web: www.example.org</p>-->
+<!--							</div> -->
+<!--                        </div>-->
+<!--						&lt;!&ndash; Col &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        -->
+<!--    </footer>-->
+<!--    &lt;!&ndash; Footer &ndash;&gt;-->
+<!--    &lt;!&ndash; Footer &ndash;&gt;-->
+<!--    &lt;!&ndash; jQuery Lib &ndash;&gt;-->
+<!--    <script src="js/jquery.min.js"></script>-->
+<!--    &lt;!&ndash; Bootstrap Js &ndash;&gt;-->
+<!--    <script src="js/bootstrap.bundle.min.js"></script>-->
+<!--    &lt;!&ndash; Easing Js &ndash;&gt;-->
+<!--    <script src="js/jquery.easing.min.js"></script>-->
+<!--    &lt;!&ndash; Carousel Js Code &ndash;&gt;-->
+<!--    <script src="js/owl.carousel.min.js"></script> -->
+<!--    &lt;!&ndash; Paroller Js &ndash;&gt;-->
+<!--    <script src="js/jquery.paroller.min.js"></script>-->
+<!--    &lt;!&ndash; Isotope Js &ndash;&gt;-->
+<!--    <script src="js/isotope.pkgd.min.js"></script>-->
+<!--    &lt;!&ndash; Magnific Popup Js &ndash;&gt;-->
+<!--    <script src="js/jquery.magnific-popup.min.js"></script>-->
+<!--	&lt;!&ndash; Validator Js &ndash;&gt;-->
+<!--    <script src="js/validator.min.js"></script>-->
+<!--    &lt;!&ndash; Smart Resize Js &ndash;&gt;-->
+<!--    <script src="js/smartresize.min.js"></script>-->
+<!--    &lt;!&ndash; Appear Js &ndash;&gt;-->
+<!--    <script src="js/jquery.appear.min.js"></script>-->
+<!--    &lt;!&ndash; Theme Custom Js &ndash;&gt;-->
+<!--    <script src="js/custom.js"></script>-->
+<!--</body>-->
+<!--&lt;!&ndash; Body End &ndash;&gt;-->
+
+<!--</html>-->

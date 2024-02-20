@@ -1,0 +1,116 @@
+{% extends "base-two.html" %}
+{% load static %}
+{% block title %}
+ Admin-Login
+{% endblock title %}
+{% block content %}
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/base-two-main.JPG' %}">
+                    <span class="theme-overlay"></span>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <div class="page-title-inner">
+                                    <div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                        <a href="index.html" class="theme-color">Home</a>
+                                        <span class="current">Login</span>
+                                    </div>
+                                    <h1 class="page-title mb-0">Login</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">					
+					<!-- Sermon Section -->
+                    <section id="section-sermon" class="sermon-section pad-bottom-45" style="padding-top: 0px;">
+                        <div class="container">
+							 <!-- Sermon Main Wrap -->
+							<div class="sermon-main-wrap sermon-list sermon-grid-2 ">
+								<!-- Row -->
+								<div class="row">
+									<!-- Col -->
+									<section class="contact-form-section form-with-img">
+										<div class="container">
+											<div class="row">
+												<!-- col -->
+												<div class="title-wrap margin-bottom-25">
+													<div class="section-title">
+														<h2 class="section-title margin-top-5">Login Here!</h2>
+														<span class="border-bottom"></span>
+													</div>
+												</div>  
+												<div class="col-lg-8 pe-0">                                   
+													<!-- Contact Form -->
+													<div class="contact-form-4 bg-white">
+														<!-- Form -->
+														<div class="contact-form-wrap">
+															<!-- form inputs -->
+															<form method="POST">
+																{% csrf_token %}
+																<div class="row">
+																	<div class="col-md-12">
+																		<!-- form group -->
+																		<div class="form-group">
+																			<input type="text" class="form-control" name="username" placeholder="Username" required data-error="*Please fill out this field">
+																			<div class="help-block with-errors"></div>
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<!-- form group -->
+																		<div class="form-group">
+																			<input type="password" class="form-control" name="password" placeholder="Password" required>
+																			<div class="help-block with-errors"></div>
+																		</div>
+																	</div>
+																
+																	
+				
+																	<div class="col-md-12">
+																		                                                       
+																		<!-- form button -->
+																		<button type="submit" id="contact-submit" class="btn btn-default mt-0 theme-btn">Log In</button>
+																	</div>
+																</div>
+																<span class="clearfix"></span>
+															</form>
+															<!-- form inputs end -->
+															<p id="contact-status-msg" class="hide"></p>
+														</div>
+														<!-- Form End-->
+													</div>
+													<!-- contact-form-1 -->
+												</div>
+												<!-- .col -->
+												<div class="col-lg-4 pad-none">
+													<div class="contact-img">
+														<img class="img-fluid" src="{% static 'images/contact/DHPC3462.JPG' %}" width="752" height="888" alt="Contact Map">
+													</div>
+												</div>
+												 <!-- Col -->
+											</div>
+										</div>
+									</section>
+                                    
+								</div>
+								<!-- Row -->
+							</div>
+							<!-- Sermon Main Wrap -->
+						</div>
+						<!-- Container -->
+                    </section>
+                    <!-- Sermon Section End -->
+                </div>
+            </div>
+        </div>
+    <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+{% endblock content %}

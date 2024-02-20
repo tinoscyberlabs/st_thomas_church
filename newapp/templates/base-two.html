@@ -1,0 +1,431 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{% static 'images/logo1-dark.png' %}" rel="icon" />
+    <!--Title-->
+    <title>Zegen - Event Details</title>
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.min.css' %}">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+	<!-- Owl Slider -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+	<!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/color-schemes/red.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" class="main-style">
+</head>
+<!--Body Start-->
+<body data-res-from="1025" oncontextmenu="return false";>
+    <!--Page Loader-->
+    <div class="page-loader"></div>
+    <!--Zmm Wrapper-->
+    <div class="zmm-wrapper">
+        <a href="#" class="zmm-close close"></a>
+        <div class="zmm-inner bg-white typo-dark">
+            <div class="text-center mobile-logo-part margin-bottom-30">
+                 <a href="{% url 'index' %}" class="img-before"><img src="{% static 'images/logo1-dark.png' %}" class="img-fluid" width="170" height="51" alt="Logo"></a>
+            </div>
+            <div class="zmm-main-nav">
+            </div>
+			<div class="search-form-wrapper margin-top-30">
+			    <form class="search-form" role="search">
+			        <div class="input-group add-on">
+			            <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+			            <div class="input-group-btn">
+			                <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button>
+			            </div>
+			        </div>
+			    </form>
+			</div>
+        </div>
+    </div>
+    <!-- Overlay Search -->
+    <div class="overlay-search text-center hide">
+		<a href="#" class="close close-light overlay-search-close"></a>
+		<div class="search-form-wrapper">
+			<form class="navbar-form search-form sliding-search-form" role="search">
+				<div class="input-group add-on">
+					<input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+					<div class="input-group-btn">
+						<button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+    <!-- Main wrapper-->
+    <div class="page-wrapper">
+        <div class="page-wrapper-inner">
+            <header>
+                <!--Mobile Header-->
+                <div class="mobile-header bg-white typo-dark">
+                    <div class="mobile-header-inner">
+                        <div class="sticky-outer">
+                            <div class="sticky-head">
+                                <div class="basic-container clearfix">
+                                    <ul class="nav mobile-header-items pull-left">
+                                        <li class="nav-item"><a href="#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
+                                    </ul>
+                                    <ul class="nav mobile-header-items pull-center">
+                                        <li>
+                                            <a href="{% url 'index' %}" class="img-before"><img src="{% static 'images/logo-dark.png' %}" class="img-fluid" width="149" height="45" alt="Logo"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav mobile-header-items pull-right">
+                                        <li class="nav-item"><a href="#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- .basic-container -->
+                            </div>
+                            <!-- .sticky-head -->
+                        </div>
+                        <!-- .sticky-outer -->
+                    </div>
+                    <!-- .mobile-header-inner -->
+                </div>
+                <!-- .mobile-header -->
+                <!--Header-->
+                <div class="header-inner header-1">
+                    <!--Sticky part-->
+                    <!--Sticky part-->
+                    <div class="sticky-outer">
+                        <div class="sticky-head">
+                            <!--Navbar-->
+                            <nav class="navbar nav-shadow">
+                                <div class="basic-container clearfix">
+                                    <div class="navbar-inner">
+										<!--Overlay Menu Switch-->
+                                        <ul class="nav navbar-items pull-left">
+                                            <li class="list-item">
+                                                <a href="{% url 'index' %}" class="logo-general"><img src="{% static 'images/logo1-light.png' %}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
+												<a href="{% url 'index' %}" class="logo-sticky"><img src="{% static 'images/logo1-dark.png' %}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
+                                            </li>
+                                        </ul>
+										<!-- Menu -->
+                                        <ul class="nav navbar-items pull-right">
+											<!--List Item-->
+												<li class="list-item">
+												<ul class="nav navbar-main menu-dark">
+													<li class="dropdown cus-img-menu active"><a href="{% url 'index' %}" style="
+														padding-right: 5px;
+													">Home</a>
+													</li>
+
+													<li class="dropdown"><a href="#" style="
+														padding-right: 5px;
+													">Parish</a>
+														<ul class="dropdown-menu">
+															<li><a href="about">History</a>
+															</li>
+															<li><a href="administration">Administration</a>
+															</li>
+
+															<li><a href="former_vicar">Former Vicars</a>
+															</li>
+															<li><a href="former_asst_vicar">Former Asst. Vicars</a>
+															</li>
+															<li><a href="error">Former Trustees</a>
+															</li>
+															<li><a href="error">Institution Inside The Campus</a>
+															</li>
+															<li><a href="error">Wards</a>
+															</li>
+
+														</ul>
+													</li>
+													<li class="dropdown"><a href="#" style="
+														padding-right: 5px;
+													">Forane</a>
+													<ul class="dropdown-menu">
+														<li><a href="parishes">Parishes & Vicars </a>
+														</li>
+														<li><a href="eucharistic">Eucharistic Centers</a>
+														</li>
+
+
+													</ul>
+													</li>
+													<li class="dropdown"><a href="#" style="
+														padding-right: 5px;
+													">Associations</a>
+														<ul class="dropdown-menu">
+															<li>
+																<a href="st_vincent_de_paul_society">St.Vincent De Paul Society
+																</a>
+															</li>
+															<li>
+																<a href="stars_pithruvedi">Stars Pithruvedi</a>
+															</li>
+															<li>
+																<a href="mathru_jyothi">Mathrujyothi</a>
+															</li>
+															<li>
+																<a href="styf">STYF</a>
+															</li>
+															<li>
+																<a href="error">Altar Servants</a>
+															</li>
+															<li>
+																<a href="error">Bible Readers Forum</a>
+															</li>
+															<li>
+																<a href="error">Choir</a>
+															</li>
+															<li>
+																<a href="error">CML</a>
+															</li>
+															<li>
+																<a href="error">Holy Childhood </a>
+															</li>
+
+
+
+														</ul>
+													</li>
+													<li class="dropdown"><a href="catechism" style="
+														padding-right: 5px;
+													">Catechism</a></li>
+
+													<li class="dropdown"><a href="#" style="
+														padding-right: 5px;
+													">Activities</a>
+														<ul class="dropdown-menu">
+															<li>
+																<a href="error">Santhome Jobs</a>
+															</li>
+															<li>
+																<a href="error">Year of Hunger</a>
+															</li>
+															<li>
+																<a href="error">Good Samaritan Group (GSG)</a>
+															</li>
+															<li>
+																<a href="error">Dialisis AID</a>
+															</li>
+															<li>
+																<a href="error">Santhome Tidings</a>
+															</li>
+														</ul>
+													</li>
+
+													<li class="dropdown"><a href="gallery" style="
+														padding-right: 5px;
+													">Gallery</a></li>
+
+
+													   <li class="dropdown"><a href="contact" style="
+														padding-right: 5px;
+													">Contact Us</a></li>
+
+												</ul>
+											</li>
+                                            <li class="list-item">
+												<div class="header-navbar-text-1"><a href="auditorium_booking" class="h-donate-btn">Auditorium</a></div>
+											</li>
+											<!-- <li class="list-item">
+												<div class="header-navbar-text-1"><a href="{% url 'login_user' %}" class="h-donate-btn">Login</a></div>
+											</li> -->
+											<!--List Item End-->
+                                        </ul>
+										<!-- Menu -->
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--sticky-head-->
+                    </div>
+                    <!--sticky-outer-->
+                </div>
+            </header>
+            <!-- header -->
+            <!-- page-header -->
+
+            {% block content %}
+		    {% endblock %}
+        <!-- Footer -->
+    <!-- Footer -->
+    <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="">
+        <!--Footer Widgets Columns Posibilities 4-->
+        <div class="footer-widgets">
+            <div class="footer-middle-wrap footer-overlay-dark">
+                <div class="color-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                         <div class="col-lg-3 widget text-widget">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">About St. Thomas Church</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="widget-text margin-bottom-30">
+                                <p>Welcome to St. Thomas Church, Jalahalli, a 2000 plus members strong community, united in the spirit of the Lord. Our Church is based in North Bangalore, and our community was formed to address the spiritual needs of the Malayalee Catholics here.</p>
+                            </div>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/stthomasblr?mibextid=eHce3h" class="social-fb"><span class="ti-facebook"></span></a>
+                                <!-- <a href="#" class="social-twitter"><span class="ti-twitter"></span></a> -->
+                                <a href="https://instagram.com/stfc_jalahalli?igshid=YTQwZjQ0NmI0OA==" class="social-instagram"><span class="ti-instagram"></span></a>
+                                <!--<a href="#" class="social-pinterest"><span class="ti-pinterest"></span></a>-->
+                                <a href="https://youtube.com/@st.thomasforanechurchjalah2526?si=YOM8nRWiuiJ-swJp" class="social-youtube"><span class="ti-youtube"></span></a>
+                            </div>                            
+                        </div>
+                        <!-- Col -->
+                        <div class="col-lg-3 widget text-widget">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Quick Links</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="menu-quick-links">
+                                <ul class="menu">
+                                    <li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.holyfamilyparishbangalore.com/">Holy Family Parish</a></li>
+                                    <li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.vatican.va/holy_father/benedict_xvi/messages/lent/documents/hf_ben-xvi_mes_20091030_lent-2010_en.html">Message of his holiness benedict xvi for lent 2010 </a></li>
+                                    <li class="menu-item"><a href="https://web.archive.org/web/20190914040908/http://www.indianrailways.gov.in/">Indian Railways</a></li>
+                                </ul>
+                            </div>                           
+                        </div>
+                        <!-- Col -->
+                        <div class="col-lg-3 widget recent-posts">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Locate Us</h3>
+                            </div>
+                            <nav>
+                                
+                                <section class="elementor-element elementor-element-48429e8 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="48429e8" data-element_type="section" style="padding-top: 0px;">
+                                    <div class="elementor-container elementor-column-gap-no">
+                                        <div class="elementor-row">
+                                            <div class="elementor-element elementor-element-52c48c7 elementor-column elementor-col-100 elementor-top-column" data-id="52c48c7" data-element_type="column">
+                                                <div class="elementor-column-wrap  elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-abbd9c6 elementor-widget elementor-widget-google_maps" data-id="abbd9c6" data-element_type="widget" data-widget_type="google_maps.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-custom-embed">
+                                                                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                                                    src="https://www.google.com/maps/place/St.+Thomas+Forane+Church/@13.0439286,77.5446999,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNUsTNNiWf2j7WuBNB-4D7F4IfUewomupV80300!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNUsTNNiWf2j7WuBNB-4D7F4IfUewomupV80300%3Dw129-h86-k-no!7i2048!8i1365!4m22!1m14!4m13!1m5!1m1!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2m2!1d77.5453926!2d13.0442586!1m6!1m2!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2sSt.+Thomas+Forane+Church,+St.claret+College+St.thomas+Church+Jalahalli,+2GVW%2BP5V,St.Thomas+Forane+Church,+5th+Cross+Rd,+Jalahalli+Village,+2nd+Stage,+Bengaluru,+Karnataka+560013!2m2!1d77.5453926!2d13.0442586!3m6!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!8m2!3d13.0443687!4d77.5454284!10e5!16s%2Fg%2F1tdb2qgc?entry=ttu&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" 
+                                                                    aria-label="St.Thomas Church, Jalahalli Nagar, Bangalore" style="width: 244.500px; height: 208px;">
+                                                                </iframe>
+                                                                </div>		
+                                                            </div>
+                                                        </div>
+                                                    </div>			
+                                                </div>		
+                                            </div>						
+                                        </div>			
+                                    </div>		
+                                </section>
+
+                            </nav>
+                        </div>
+                        <!-- Col -->
+                        <div class="col-lg-3 widget contact-info-widget">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Contact Info</h3>
+                            </div>
+                            <div class="widget-text margin-bottom-30">
+                                <p>Address:<br>
+                                    MES Ring Road, 5th Cross, <br>
+                                    Sharadamba Nagar, Jalahalli Post,<br>
+                                    Bangalore - 560013<br>
+                                    Phone: 0091-80-28383175<br>
+                                    Email: example@gmail.com<br>
+                                    Web: www.example.org</p>
+                            </div> 
+                        </div>
+                        <!-- Col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="footer-bottom-wrap pad-tb-20 typo-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-bottom-items pull-left">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner">
+                                        Copyrights  © 2024 <a href="index.html">St.Thomas Forane Curch</a>. Designed by <a href="http://zozothemes.com/">Tinos software and security solutions LLP</a><span class="heart-color">♥</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="footer-bottom-items footer-menu pull-right">
+                                <!-- <li class="nav-item">
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Sermons</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a href="contact">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Footer -->
+    <!-- jQuery Lib -->
+    <script>
+        document.onkeydown=function(e)
+        {
+            if(event.keyCode == 123)
+            {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+            {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+            {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'U'.charCodeAt(0))
+            {
+                return false;
+            }
+        }
+    </script>    
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Bootstrap Js -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Easing Js -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!-- Carousel Js Code -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- Paroller Js -->
+    <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+    <!-- Isotope Js -->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!-- Magnific Popup Js -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<!-- Validator Js -->
+    <script src="{% static 'js/validator.min.js' %}"></script>
+    <!-- Smart Resize Js -->
+    <script src="{% static 'js/smartresize.min.js' %}"></script>
+    <!-- Appear Js -->
+    <script src="{% static 'js/jquery.appear.min.js' %}"></script>
+    <!-- Theme Custom Js -->
+    <script src="{% static 'js/custom.js' %}"></script>
+	<!-- Google Map Js -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtkY02zM_XV3XtSzJbNwJdiA2iuNmP_bI"></script>
+</body>
+<!-- Body End -->
+</html>

@@ -1,0 +1,85 @@
+{% extends "base-two.html" %}
+{% load static %}
+{% block title %}
+ Gallery
+{% endblock title %}
+
+{% block content %}
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/img-10.jpg' %}">
+					<span class="theme-overlay"></span>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <div class="page-title-inner">
+									<div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                        <a href="index.html" class="theme-color">Home</a>
+                                        <span class="current">Gallery</span>
+                                    </div>
+                                    <h1 class="page-title mb-0">Gallery</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">
+					<!-- Portfolio Section -->
+                    <section class="portfolio-section pad-top-120 pad-bottom-70">
+                        <div class="container">
+                            <div class="row">
+								<!-- Col -->
+                                <div class="col-md-12">
+                                    <div class="portfolio-wrap portfolio-default popup-gallery">
+                                        <div class="isotope-grid" data-gutter="30" data-cols="3">{% for images in gallery %}
+                                            <!-- .portfolio-item -->
+                                            <div class="isotope-item">
+												<div class="portfolio-item portfolio-overlay-wrap">
+													<!-- .portfolio-thumb -->
+													<div class="portfolio-thumb relative b-radius-6 o-hide">
+														<img src="{{images.image}}" class="img-fluid" width="700" height="466" alt="" title="Invest Advices" />
+														<!-- .portfolio-wrap -->
+														<div class="portfolio-wrap">
+															<div class="portfolio-details-overlay">
+																<div class="portfolio-icons">
+																    <a href="images/portfolio/portfolio-grid/1.jpg" class="popup-img" title="">
+																        <i class="ti-zoom-in"></i>
+																    </a>
+																</div>
+															</div>
+														</div>
+                                                        <center>
+                                                            <div>
+                                                                <h4 class="margin-bottom-10">{{images.gallery_name}}</h4>
+                                                            </div>
+                                                        </center>
+														<!-- .portfolio-wrap -->
+													</div>
+													<!-- .portfolio-thumb -->													
+												</div>											
+                                            </div>{% endfor %}
+                                        </div>	
+                                        <!-- .isotope-grid -->                                    	
+                                    </div>
+                                    <!-- .portfolio-wrap -->
+                                </div>
+                                <!-- col -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- .container -->
+                    </section>
+                    <!-- Portfolio Section End -->                    
+                </div>
+            </div>
+        </div>
+        <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+    {% endblock content %}

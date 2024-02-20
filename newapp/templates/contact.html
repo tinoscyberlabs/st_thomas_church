@@ -1,0 +1,261 @@
+{% extends "base-two.html" %}
+{% load static %}
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block content %}
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/base-two-main.JPG' %}">
+                    <span class="theme-overlay"></span>
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-12">
+                                    <div class="page-title-inner">
+                                        <div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                            <a href="index.html" class="theme-color">Home</a>
+												<span class="current">Contact</span>
+
+											<h1 class="page-title mb-0">Contact</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">
+					<!-- Contact Section -->
+                    <section id="contact-section" class="contact-section pad-bottom-none">
+                        <div class="container">
+                            <!-- Row -->
+                            <div class="row">
+                                <!-- Col -->
+                                <div class="col-lg-4 mb-lg-0 mb-4">
+									<div class="div-bg-img b-radius-20" data-bg="" style="background-color: rgba(0,21,47,0.86);">
+										<div class="f-box c-page text-center typo-white">
+											<div class="feature-icon margin-bottom-10">
+												<i class="ti-location-pin"></i>
+											</div>
+											<div class="feature-content">
+												<div class="feature-title">
+													<h5 class="mb-2">Our Location</h5>
+												</div>
+												<p class="mb-0">Jalahalli Village, M.E.S. ring road, 5th Cross, Sharadamba Nagar.</p>
+											</div>											
+										</div>
+									</div>
+                                </div>
+                                <!-- Col -->
+                                <div class="col-lg-4 mb-lg-0 mb-4">
+                                    <div class="div-bg-img b-radius-20" data-bg="" style="background-color: #bf0a30;">
+										<div class="f-box c-page text-center typo-white">
+											<div class="feature-icon margin-bottom-10">
+												<i class="ti-headphone-alt"></i>
+											</div>
+											<div class="feature-content">
+												<div class="feature-title">
+													<h5 class="mb-2">Phone Number</h5>
+												</div>
+												<a href="tel:(+55)654-545-5418">(+55) 654 - 545 - 5418</a>
+												<br>
+												<a href="tel:(+55)654-545-1235">(+55) 654 - 545 - 1235</a>
+											</div>											
+										</div>
+									</div>
+                                </div>
+                                <!-- Col -->
+                                <div class="col-lg-4">
+                                    <div class="div-bg-img b-radius-20" data-bg="" style="background-color: rgba(0,21,47,0.86);">
+										<div class="f-box c-page text-center typo-white">
+											<div class="feature-icon margin-bottom-10">
+												<i class="ti-email"></i>
+											</div>
+											<div class="feature-content">
+												<div class="feature-title">
+													<h5 class="mb-2">Email Address</h5>
+												</div>
+												<a href="mailto:info@example.com">info@stthomaschurch.com</a>
+												<br>
+                                                    
+												<a href="mailto:info@zegen.com">info@.com</a>
+											</div>											
+										</div>
+									</div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                        </div>
+						<!-- Container -->
+                    </section>
+                    <!-- Contact Section End -->
+					<!-- Contact Section -->
+                    <section class="contact-form-section form-with-img">
+                        <div class="container">
+                            <div class="row">
+                                <!-- col -->
+                                <div class="col-lg-8 pe-0">                                    
+                                    <!-- Contact Form -->
+                                    <div class="contact-form-4 bg-white">
+                                        <!-- Form -->
+                                        <div class="contact-form-wrap">
+                                            <!-- form inputs -->
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <!-- form group -->
+                                                        <div class="form-group">
+                                                            <input id="name" class="form-control" name="name" placeholder="Name" data-bv-field="name" type="text" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <!-- form group -->
+                                                        <div class="form-group">
+                                                            <input id="email" class="form-control" name="email" placeholder="Email" data-bv-field="email" type="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <!-- form group -->
+                                                        <div class="form-group">                                                            
+															<input id="Phone" class="form-control" name="Phone" placeholder="Phone" data-bv-field="phone" type="number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <!-- form group -->
+                                                        <div class="form-group">                                                            
+															<input id="address" class="form-control" name="address" placeholder="Address" data-bv-field="address" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <!-- form group -->
+                                                        <div class="form-group">                                                            
+															<input id="pincode" class="form-control" name="pincode" placeholder="Pincode" data-bv-field="" type="number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="contact-message">
+                                                            <!-- form group -->
+                                                            <div class="form-group">
+                                                                <textarea id="message" class="form-control textarea" rows="5" name="message" placeholder="Your Message" data-bv-field="message"></textarea>
+                                                            </div>
+                                                        </div>                                                        
+                                                        <!-- form button -->
+                                                        <button type="submit" id="contact-submit" class="btn btn-default mt-0 theme-btn">Send Now</button>
+                                                    </div>
+                                                </div>
+                                                <span class="clearfix"></span>
+                                            </form>
+                                            <!-- form inputs end -->
+                                            <p id="contact-status-msg" class="hide"></p>
+                                        </div>
+                                        <!-- Form End-->
+                                    </div>
+                                    <!-- contact-form-1 -->
+                                </div>
+                                <!-- .col -->
+                                <!-- <div class="col-lg-4 pad-none">
+                                    <div class="contact-img">
+                                        <img class="img-fluid" src="{% static 'images/contact/contact_bg4.jpg' %}" width="752" height="888" alt="Contact Map">
+                                    </div>
+                                </div> -->
+                                 <!-- Col -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Contact Form Section End -->					
+					<!-- Contact Map -->
+					<section class="contact-map pad-top-none" style="padding-bottom: 0px;"> 
+						<div class="container">
+                            <div class="row">
+                                <!-- col -->
+                                <div class="col-md-12"> 
+									<!-- Screan Reader Text -->
+									<h2 class="screen-reader-text">Map</h2>
+									<!-- Container Fluid -->
+									<div class="container-fluid pad-none">
+                                        <div class="title-wrap margin-bottom-50">
+                                            <div class="section-title">
+                                                <span class="sub-title theme-color text-uppercase">Location</span>
+                                                <h2 class="section-title margin-top-5">How to reach</h2>
+                                                <span class="border-bottom"></span>
+                                            </div>
+                                            <div class="pad-top-15">
+                                                <p class="margin-bottom-20">The church is easily accessible by road from central part of the city, railway stations and Bangalore international airport. It lies on the periphery of the outer Ring road in Jalahalli village between BEL circle and Goruguntepalya (Tumkur Road). It is about 1 Kilometer from BEL circle towards Tumkur Road. The exact place is Jalahalli Village, M.E.S. ring road, 5th Cross, Sharadamba Nagar. <br>
+                                                    <span class="sub-title theme-color text-uppercase">Road:</span><br>
+                                                    The Bangalore Metropolitan Transport Corporation (www.bmtcinfo.com) handles all the buses plying within the city, and the Karnataka State Road Transport Corporation (www.ksrtc.in) operates buses within the state as well as outside the state. Other State Road Transport Corporations operate buses outside the state.<br>
+                                                    Nearest inter-state bus stands: KempeGowda Bus Station (Majestic)
+                                                    Nearest intra city bus stands: Majestic (Route # 271, 271 D, 273, 276), Shivaji Nagar (Route # 272), Yeshwantpur (No direct buses), Hebbal (Route # 500)
+                                                    Nearest bus stop: Jalahalli Village/ M.E.S Ring Road/ BEL Circle.
+                                                    A number of private agencies also run bus services to cities and towns across the country. These buses mainly operate from Kalasipalayam near city market.<br>
+                                                    <span class="sub-title theme-color text-uppercase">Rail:</span><br>
+                                                    There are three railway stations near to the church. They are Bangalore City (Majestic), Cantonment (Shivaji Nagar) and Yeshwanthpur. You can find more information at www.indianrail.gov.in<br>
+                                                    <span class="sub-title theme-color text-uppercase">Air:</span><br>
+                                                    Bangalore is well-connected to all major cities in India and abroad by air. The Bangalore International Airport (www.bengaluruairport.com )is located at Devanahalli near to city. If you use public transport system from airport, reach Hebbal using Airport busses and proceed towards BEL Circle.<br>
+                                                    <br><br><span class="sub-title theme-color text-uppercase">Road Map</span>
+                                                    <div class="div-bg-img b-radius-20" data-bg="images/contact/contact_bg3.jpg"></div>
+                                                    <div class="about-wrap relative">
+                                                        <div class="about-wrap-inner">
+                                                            <!-- about details -->
+                                                            <div class="about-wrap-details">
+                                                                <!-- about button -->
+                                                                <div class="text-center">
+                                                                    <div class="about-img">
+                                                                        <img src="{% static 'images/contact/contact_bg3.jpg' %}" class="" alt="about-img">
+                                                                    </div>
+                                                                    <!-- .col -->
+                                                                </div>
+                                                            </div>
+                                                            <!-- about details End-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+										<!-- Map -->
+										<section class="elementor-element elementor-element-48429e8 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="48429e8" data-element_type="section" style="padding-top: 0px;">
+                                            <div class="elementor-container elementor-column-gap-no">
+                                                <div class="elementor-row">
+                                                    <div class="elementor-element elementor-element-52c48c7 elementor-column elementor-col-100 elementor-top-column" data-id="52c48c7" data-element_type="column">
+                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <div class="elementor-element elementor-element-abbd9c6 elementor-widget elementor-widget-google_maps" data-id="abbd9c6" data-element_type="widget" data-widget_type="google_maps.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-custom-embed">
+                                                                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                                                            src="https://www.google.com/maps/place/St.+Thomas+Forane+Church/@13.1890508,77.303241,10.92z/data=!4m21!1m14!4m13!1m5!1m1!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2m2!1d77.5453926!2d13.0442586!1m6!1m2!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!2sSt.+Thomas+Forane+Church,+St.claret+College+St.thomas+Church+Jalahalli,+2GVW%2BP5V,St.Thomas+Forane+Church,+5th+Cross+Rd,+Jalahalli+Village,+2nd+Stage,+Bengaluru,+Karnataka+560013!2m2!1d77.5453926!2d13.0442586!3m5!1s0x3bae3d48aaa61c4d:0x1e6755c7560d30b4!8m2!3d13.0443687!4d77.5454284!16s%2Fg%2F1tdb2qgc?entry=ttu" 
+                                                                            aria-label="St.Thomas Church, Jalahalli Nagar, Bangalore" style="width: 100%; height: 450px; padding-left: 85px; padding-right: 85px;">
+                                                                        </iframe>
+                                                                        </div>		
+                                                                    </div>
+                                                                </div>
+                                                            </div>			
+                                                        </div>		
+                                                    </div>						
+                                                </div>			
+                                            </div>		
+                                    </section>
+                                    
+                                    </div><!-- / row -->
+                                    <!-- / form 1 -->
+									</div>
+									<!-- Container Fluid -->
+								</div>
+								<!-- col -->
+							</div>
+						</div>	
+					</section>
+					<!-- Contact Map End -->									
+                </div>
+            </div>
+        </div>
+        <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+   {% endblock content %}

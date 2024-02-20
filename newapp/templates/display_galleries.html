@@ -1,0 +1,20 @@
+<!-- galleryapp/templates/galleryapp/display_galleries.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Galleries</title>
+</head>
+<body>
+    <h1>Display Galleries</h1>
+    {% for gallery in galleries %}
+        <div>
+            <h2>Category: {{ gallery.category.category_name }}</h2>
+            <img src="{{ gallery.category.image.url }}" alt="{{ gallery.category.category_name }}">
+            <h3>Images:</h3>
+            <img src="{{ gallery.images.url }}" alt="Gallery Image">
+        </div>
+    {% endfor %}
+</body>
+</html>
